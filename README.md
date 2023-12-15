@@ -7,20 +7,21 @@ Make retro gaming text in Gimp using this plugin
 
 ## Location to put binaries (they don't go in the normal plugins folder)
 
-Windows
+**Windows**
 
  C:\Users\(USERNAME)\AppData\Local\gegl-0.4\plug-ins
  
- Linux 
+** Linux **
 
  /home/(USERNAME)/.local/share/gegl-0.4/plug-ins
  
- Linux (Flatpak includes Chromebook)
+** Linux (Flatpak includes Chromebook)**
 
  /home/(USERNAME)/.var/app/org.gimp.GIMP/data/gegl-0.4/plug-ins
 
 
-Then restart Gimp and go to GEGL operation and look for "pixel text"
+Then restart Gimp and go to GEGL operation and look for "pixel text" 
+in Gimp 2.99 only this will be in the menu under filters>text styling, but this won't be the location in 2.10.
 
 
 ## Compiling and Installing
