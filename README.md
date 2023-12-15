@@ -64,7 +64,7 @@ ninja -C build
 
 ## another preview of this based plugin
 
-![image preview](/previews/preview2.png)
+![image preview](/previews/preview2)
 
 
 
