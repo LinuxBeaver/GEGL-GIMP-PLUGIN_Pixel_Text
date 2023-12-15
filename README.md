@@ -11,11 +11,11 @@ Make retro gaming text in Gimp using this plugin
 
  C:\Users\(USERNAME)\AppData\Local\gegl-0.4\plug-ins
  
-** Linux **
+**Linux**
 
  /home/(USERNAME)/.local/share/gegl-0.4/plug-ins
  
-** Linux (Flatpak includes Chromebook)**
+**Linux (Flatpak includes Chromebook)**
 
  /home/(USERNAME)/.var/app/org.gimp.GIMP/data/gegl-0.4/plug-ins
 
