@@ -268,15 +268,15 @@ default: colorsetting = state->nopcolor;
   gegl_node_link_many (state->idref2, state->emboss,  NULL);
 /*idref2 also know as gegl:nop connects to emboss because it is the last node in the second link_many. It is sending a image of the graph's current state to be embossed. That is why it is seen
 before and after "blend mode change"*/
-  gegl_node_connect_from (blendmodechange, "aux", state->emboss, "output");
+  gegl_node_connect (blendmodechange, "aux", state->emboss, "output");
 /*blendmodechange the only node without a state-> is connecting to emboss so it can be a blend mode switcher of either "gegl:overlay or gegl:multiply"*/
-  gegl_node_connect_from (blendmodechange, "aux", state->emboss, "output");
+  gegl_node_connect (blendmodechange, "aux", state->emboss, "output");
 /*The lock alpha channel blend mode (gegl:src-atop) is connecting to gegl:layer src=imagepathhere.jpg for an image file upload ability*/
-  gegl_node_connect_from (state->alphalock, "aux", state->layer, "output");
+  gegl_node_connect (state->alphalock, "aux", state->layer, "output");
 /*Idref1 (The first gegl:nop) exist to make a duplicate of pixelize's effect and put it behind the original image and then tweak it with levels and saturation to darken it.
 It connects to levels because that is the last node.*/
   gegl_node_link_many (state->idref1,  state->offset, state->saturation, state->levels,  NULL);
-  gegl_node_connect_from (state->behind, "aux", state->levels, "output");
+  gegl_node_connect (state->behind, "aux", state->levels, "output");
 }
 
 static void
